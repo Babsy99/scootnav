@@ -51,6 +51,7 @@ button.on{background:#fff;color:#000;border-color:#fff}
 .sw{display:inline-block;width:14px;height:4px;vertical-align:middle;margin-right:3px;border-radius:2px}
 .maplibregl-ctrl-attrib{font-size:10px}
 </style>
+<link rel="stylesheet" href="v15/settings.css">
 </head>
 <body>
 <div id="map"></div>
@@ -74,6 +75,7 @@ button.on{background:#fff;color:#000;border-color:#fff}
   <div id="note"></div>
 </div>
 <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<script src="v15/settings.js"></script>
 <script>
 const BR='https://brouter.de/brouter', NAMES='https://routing.openstreetmap.de/routed-bike/nearest/v1/driving/', PHOTON='https://photon.komoot.io/api/';
 const OFF_ROUTE_M=40, ADVANCE_M=18, AHEAD_M=15, PROFILE_VER='c6', BBOX=[-71.18,42.29,-71.03,42.41];
@@ -85,13 +87,14 @@ const NOTE={scooter:'Scooter mode: streets, bike lanes and street-side cycle tra
 function paintMode(){$('mode').textContent=mode==='scooter'?'Scooter':'E-bike';$('mode').classList.toggle('on',mode==='ebike');$('note').textContent='v0.2 · '+NOTE[mode]}
 paintMode();
 // ---- map: calm dark base, CyclOSM + city lanes behind the Lanes toggle ----
-const map=new maplibregl.Map({container:'map',style:'https://tiles.openfreemap.org/styles/dark',bounds:[[-71.13,42.31],[-71.07,42.375]],maxBounds:[[-71.22,42.27],[-70.99,42.43]],attributionControl:{compact:true,customAttribution:'Routing BRouter · Search Photon/OSM · © OpenStreetMap contributors'},pitchWithRotate:false,dragRotate:false});
+const map=new maplibregl.Map({container:'map',style:SNS.mapStyle('https://tiles.openfreemap.org/styles/dark'),bounds:[[-71.13,42.31],[-71.07,42.375]],maxBounds:[[-71.22,42.27],[-70.99,42.43]],attributionControl:false,pitchWithRotate:false,dragRotate:false});
 let lanesOn=false;
-map.on('load',()=>{
+map.on('error',e=>{if(e&&/cyclosm|base/.test(e.sourceId||''))return;console.error(e&&e.error||e)});
+map.on('style.load',()=>{if(map.getSource('route'))return;
   map.addSource('cyclosm',{type:'raster',tiles:['https://a.tile-cyclosm.openstreetmap.fr/cyclosm/{z}/{x}/{y}.png','https://b.tile-cyclosm.openstreetmap.fr/cyclosm/{z}/{x}/{y}.png'],tileSize:256,attribution:'CyclOSM'});
-  map.addLayer({id:'cyclosm',type:'raster',source:'cyclosm',layout:{visibility:'none'},paint:{'raster-opacity':0.85}});
+  map.addLayer({id:'cyclosm',type:'raster',source:'cyclosm',layout:{visibility:lanesOn?'visible':'none'},paint:{'raster-opacity':0.85}});
   map.addSource('lanes',{type:'geojson',data:'bikenet.json'});
-  map.addLayer({id:'lanes',type:'line',source:'lanes',layout:{visibility:'none'},paint:{'line-width':4,'line-opacity':.8,'line-color':['case',['==',['slice',['get','f'],0,2],'CF'],'#f472b6',['==',['slice',['get','f'],0,2],'CT'],'#f472b6',['in',['get','f'],['literal',['SBL','BSBL','BFBL','SUP','SUB','CTBL','SLB','PBL']]],'#22c55e',['in',['get','f'],['literal',['BL','BBL']]],'#60a5fa','#a3a3a3']}});
+  map.addLayer({id:'lanes',type:'line',source:'lanes',layout:{visibility:lanesOn?'visible':'none'},paint:{'line-width':4,'line-opacity':.8,'line-color':['case',['==',['slice',['get','f'],0,2],'CF'],'#f472b6',['==',['slice',['get','f'],0,2],'CT'],'#f472b6',['in',['get','f'],['literal',['SBL','BSBL','BFBL','SUP','SUB','CTBL','SLB','PBL']]],'#22c55e',['in',['get','f'],['literal',['BL','BBL']]],'#60a5fa','#a3a3a3']}});
   map.addSource('route',{type:'geojson',data:{type:'FeatureCollection',features:[]}});
   map.addLayer({id:'route-casing',type:'line',source:'route',layout:{'line-cap':'round','line-join':'round'},paint:{'line-color':'#000','line-width':14}});
   map.addLayer({id:'route',type:'line',source:'route',layout:{'line-cap':'round','line-join':'round'},paint:{'line-color':'#22c55e','line-width':9}});
@@ -181,13 +184,13 @@ async function suggest(q){const seq=++sugSeq;if(sugAbort)sugAbort.abort();sugAbo
       :'[out:json][timeout:6];nwr["name"~"^'+esc(q).replace(/"/g,'')+'",i](around:3000,'+c[0]+','+c[1]+');out center tags 20;',sig);
       rows=dedupe(el.map(e=>rowFromOsm(e,c)).filter(r=>r.main&&inBox(r.ll)))}catch(e){if(e.name==='AbortError')return}}
   if(seq!==sugSeq)return;
-  rows.sort((a,b)=>a.d-b.d);sugList=[...localMatches(q).slice(0,2),...rows].slice(0,6);showSugg(q);sugQ=q}
+  rows.sort((a,b)=>a.d-b.d);sugList=SNS.mergeSaved(q,[...localMatches(q).slice(0,2),...rows].slice(0,6),c,6);showSugg(q);sugQ=q}
 function showSugg(q){const el=$('sugg');if(!sugList.length){el.innerHTML=q&&q.length>=3?'<div style="color:#aaa;font-weight:600">No nearby match yet. Keep typing or tap Go.</div>':'';el.style.display=el.innerHTML?'block':'none';return}
   el.innerHTML=sugList.map((s,i)=>'<div data-i="'+i+'">'+s.main.replace(/</g,'&lt;')+'<small>'+[s.sub,fmt(s.d)].filter(Boolean).join(' · ').replace(/</g,'&lt;')+'</small></div>').join('')+(sugList.some(s=>!s.local)?'<div class="cred">Search: Photon · © OpenStreetMap contributors</div>':'');el.style.display='block'}
 async function resolve(s){if(!s.approx)return s.ll;try{const j=await (await fetch(NOMI+'?format=jsonv2&limit=1&bounded=1&viewbox='+SBOX.join(',')+'&q='+encodeURIComponent(s.main+', Boston'))).json();if(j[0]&&inBox([+j[0].lat,+j[0].lon]))return [+j[0].lat,+j[0].lon]}catch(e){}return s.ll}
 $('sugg').addEventListener('click',async e=>{const d=e.target.closest('[data-i]');if(!d)return;const s=sugList[+d.dataset.i];$('dest').value=s.main;$('sugg').style.display='none';$('dest').blur();const ll=await resolve(s);addRecent({...s,ll});setDest(ll,s.main)});
-function onQuery(){const q=$('dest').value.trim();if(q.length<3||/^\d+[a-z]?$/i.test(q)){sugSeq++;if(sugAbort)sugAbort.abort();let m=localMatches(q);if(!m.length)m=localMatches('');sugList=m.slice(0,6);showSugg();sugQ=q} // short or bare number: on-device only, no request
-  else{sugList=localMatches(q).slice(0,2);showSugg();suggest(q)}}
+function onQuery(){const q=$('dest').value.trim();if(q.length<3||/^\d+[a-z]?$/i.test(q)){sugSeq++;if(sugAbort)sugAbort.abort();let m=localMatches(q);if(!m.length)m=localMatches('');sugList=SNS.mergeSaved(q,m.slice(0,6),me,6);showSugg();sugQ=q} // short or bare number: on-device only, no request
+  else{sugList=SNS.mergeSaved(q,localMatches(q).slice(0,2),me,6);showSugg();suggest(q)}}
 ['paste','input'].forEach(ev=>$('dest').addEventListener(ev,()=>{newLeg();if(!leg.t_input)leg.t_input=iso();clearTimeout(sugTimer);sugTimer=setTimeout(onQuery,ev==='paste'?50:350)}));
 $('dest').addEventListener('focus',()=>{if(!$('dest').value.trim())onQuery()});
 // Go/Enter: take the top row; otherwise one Nominatim lookup (a single search, not autocomplete)
@@ -199,7 +202,7 @@ $('go').onclick=async()=>{const q=$('dest').value.trim();if(!q)return;$('sugg').
 $('dest').addEventListener('keydown',e=>{if(e.key==='Enter')$('go').click()});
 map.on('click',e=>{if(!riding)setDest([e.lngLat.lat,e.lngLat.lng])});
 // ---- position + heading arrow ----
-function meEl(){const d=document.createElement('div');d.className='me';d.innerHTML='<svg viewBox="0 0 56 56" width="56" height="56"><circle cx="28" cy="28" r="26" fill="rgba(61,139,253,.25)"/><path d="M28 6 L44 46 L28 37 L12 46 Z" fill="#3d8bfd" stroke="#fff" stroke-width="3.5" stroke-linejoin="round"/></svg>';return d}
+function meEl(){const d=document.createElement('div');d.className='me';d.innerHTML='<svg viewBox="0 0 56 56" width="56" height="56"><circle cx="28" cy="28" r="26" fill="rgba(61,139,253,.25)"/><path d="M28 6 L44 46 L28 37 L12 46 Z" fill="#3d8bfd" stroke="#fff" stroke-width="3.5" stroke-linejoin="round"/></svg>';return SNS.decorateArrow(d)}
 function setMe(ll,hdg,spd){if(me&&lastFix&&(hdg==null||isNaN(hdg))){const mv=hav(lastFix,ll);if(mv>4){hdg=bearing(lastFix,ll);lastFix=ll}}else lastFix=ll;
   if(!lastFix)lastFix=ll;me=ll;if(hdg!=null&&!isNaN(hdg)&&(spd==null||spd>0.8))heading=hdg;
   if(!meMarker)meMarker=new maplibregl.Marker({element:meEl(),rotationAlignment:'map',pitchAlignment:'map'}).setLngLat([ll[1],ll[0]]).addTo(map);
@@ -212,9 +215,9 @@ map.on('dragstart',()=>{if(riding){follow=false;$('recenter').style.display='blo
 $('recenter').onclick=()=>{follow=true;$('recenter').style.display='none';followCam(true)};
 // ---- routing ----
 async function routeOn(h,from,to,retry){if(!profAll[h])await uploadProfiles(h);const pr=profAll[h];
-  const u=h+'?lonlats='+from[1].toFixed(6)+','+from[0].toFixed(6)+'|'+to[1].toFixed(6)+','+to[0].toFixed(6)+'&profile='+pr[mode]+'&alternativeidx=0&format=geojson&timode=2';
+  const u=h+'?lonlats='+from[1].toFixed(6)+','+from[0].toFixed(6)+'|'+to[1].toFixed(6)+','+to[0].toFixed(6)+'&profile='+((await SNS.profileId(mode,h))||pr[mode])+'&alternativeidx=0&format=geojson&timode=2';
   const r=await fetch(u);const t=await r.text();
-  if(!r.ok||t[0]!=='{'){if(!retry&&/profile/i.test(t)){await uploadProfiles(h);return routeOn(h,from,to,true)}throw new Error(t.slice(0,160))}
+  if(!r.ok||t[0]!=='{'){if(!retry&&/profile/i.test(t)){SNS.resetProfiles(h);await uploadProfiles(h);return routeOn(h,from,to,true)}throw new Error(t.slice(0,160))}
   return JSON.parse(t).features[0]}
 async function fetchRoute(from,to){await profReady;let err;
   for(let k=0;k<HOSTS.length;k++){const h=HOSTS[(hostOk+k)%HOSTS.length];
@@ -280,6 +283,9 @@ $('sim').onclick=()=>{if(!route)return;if(!riding)$('start').click();clearInterv
     const A=c[i],B=c[i+1],p=[A[0]+(B[0]-A[0])*Math.min(f,1),A[1]+(B[1]-A[1])*Math.min(f,1)];setMe(p,bearing(A,B),5)},600)};
 $('miss').onclick=()=>{if(!me||!route)return;clearInterval(simTimer);const s=steps[si],c=route.ll,j=Math.max(1,s.idx),h=bearing(c[j-1],c[j]);
   const p=ahead(s.loc,h,70);setMe(p,h,5);setTimeout(()=>setMe([p[0]+1e-5,p[1]],h,5),300)};
+SNS.init({map,darkStyle:'https://tiles.openfreemap.org/styles/dark',brouter:BR,photon:PHOTON,bbox:BBOX,profileUrl:'profile/courier.brf',getMe:()=>me,
+  routeTo:(ll,name)=>{$('dest').value=name;$('sugg').style.display='none';$('dest').blur();setDest(ll,name)},
+  replan:()=>{if(dest)plan(riding?'mode':false)}});
 window._sn={photon:{},store,get sugQ(){return sugQ},legs,get route(){return route},get steps(){return steps},get leg(){return leg},map};
 </script>
 </body>
