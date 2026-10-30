@@ -1,0 +1,34 @@
+{
+  "exported": "2026-10-30T03:00:47.480Z",
+  "app": "scootnav v0.1",
+  "legs": [
+    {
+      "id": "mvudx9ew",
+      "app": "scootnav v0.1",
+      "mode": "scooter",
+      "t_input": "2026-10-30T03:00:34.664Z",
+      "dest_query": "222 Newbury St, Boston",
+      "dest": [
+        42.34976,
+        -71.08108
+      ],
+      "t_route_ready": "2026-10-30T03:00:35.852Z",
+      "t_start": "2026-10-30T03:00:39.072Z",
+      "handoff_s": 4.4,
+      "route_m": 1261,
+      "reroutes": [
+        {
+          "t": "2026-10-30T03:00:44.715Z",
+          "off_route_m": 70,
+          "latency_ms": 152,
+          "new_route_m": 864,
+          "added_m": -85
+        }
+      ],
+      "t_end": "2026-10-30T03:00:46.794Z",
+      "arrived": false,
+      "rating": "up",
+      "route_ms": 764
+    }
+  ]
+}
