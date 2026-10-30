@@ -1,0 +1,421 @@
+{
+ "when": "2026-10-30T22:16:05.100Z",
+ "url": "http://127.0.0.1:8765/index.html?sim=1&lat=42.3489&lon=-71.0951",
+ "viewport": "390x844@2x",
+ "from": "Kenmore Sq 42.3489,-71.0951",
+ "test_home": "Test Home, 100 Test St (made-up label at Copley Sq 42.3499,-71.0782)",
+ "proxied": {
+  "brouter": 11,
+  "photon_live": 6,
+  "photon_fallback": 0,
+  "fixture": 1
+ },
+ "network_failures_not_console": [
+  "https://a.tile-cyclosm.openstreetmap.fr/cyclosm/17/39650/48488.png net::ERR_ABORTED",
+  "https://b.tile-cyclosm.openstreetmap.fr/cyclosm/17/39649/48488.png net::ERR_ABORTED",
+  "https://b.tile-cyclosm.openstreetmap.fr/cyclosm/17/39651/48488.png net::ERR_ABORTED"
+ ],
+ "results": [
+  [
+   "D1 cold load Scooter",
+   true,
+   ""
+  ],
+  [
+   "D1 PROFILE_VER c6",
+   true,
+   ""
+  ],
+  [
+   "V15f gmh visible >=60px",
+   true,
+   ""
+  ],
+  [
+   "V15f gmh unset state",
+   true,
+   ""
+  ],
+  [
+   "D1 Mc local only (no remote)",
+   true,
+   [
+    "Test Spot | ★ Saved · 100 Test St · 0.32 mi"
+   ]
+  ],
+  [
+   "D1 McD -> McDonald's nearest first",
+   true,
+   [
+    "McDonald's | 540 Commonwealth Avenue · 135 m",
+    "McDonald's | 146 Tremont Street · 1.7 mi",
+    "McDonald's | 870 Massachusetts Avenue · 1.7 mi"
+   ]
+  ],
+  [
+   "D1 El Jefe",
+   true,
+   [
+    "El Jefe's Taqueria | 957 Commonwealth Avenue · 1.2 mi",
+    "El Jefe's Taqueria | 80 Boylston Street · 1.6 mi"
+   ]
+  ],
+  [
+   "D1 Prudential",
+   true,
+   [
+    "Prudential Center Plaza II | Boston · 0.61 mi",
+    "Skywalk Observatory | 800 Boylston Street · 0.65 mi"
+   ]
+  ],
+  [
+   "D1 40 Hemen address row",
+   true,
+   [
+    "40 Hemenway Street | Boston · pin on street · 0.56 mi"
+   ]
+  ],
+  [
+   "D1 route",
+   true,
+   {
+    "len": 2085,
+    "router": "brouter.de",
+    "steps": 10
+   }
+  ],
+  [
+   "D1 Lanes on",
+   true,
+   ""
+  ],
+  [
+   "D1 Lanes off",
+   true,
+   ""
+  ],
+  [
+   "D1 sim ride turn card",
+   true,
+   {
+    "display": "flex",
+    "bg": "rgb(255, 255, 255)",
+    "fg": "rgb(0, 0, 0)"
+   }
+  ],
+  [
+   "D1 reroute after Sim miss",
+   true,
+   {
+    "t": "2026-10-30T22:14:14.805Z",
+    "off_route_m": 69,
+    "latency_ms": 95,
+    "new_route_m": 1997,
+    "added_m": 126
+   }
+  ],
+  [
+   "D1 Recenter appears on pan",
+   true,
+   ""
+  ],
+  [
+   "D1 Recenter hides after tap",
+   true,
+   ""
+  ],
+  [
+   "D1 handoff_s logged",
+   true,
+   ""
+  ],
+  [
+   "V15f unset tap opens Set Home",
+   true,
+   ""
+  ],
+  [
+   "V15f Set Home autocomplete",
+   true,
+   ""
+  ],
+  [
+   "V15e/f home saved",
+   true,
+   ""
+  ],
+  [
+   "V15e places add",
+   true,
+   [
+    "Test Spot",
+    "Test Home",
+    "Fenway Park",
+    "Kenmore Sq"
+   ]
+  ],
+  [
+   "V15e edit",
+   true,
+   ""
+  ],
+  [
+   "V15e delete (two-tap)",
+   true,
+   ""
+  ],
+  [
+   "V15e shared sn_places keeps V9 recents",
+   true,
+   ""
+  ],
+  [
+   "V15e bare house number: Test Home first",
+   true,
+   [
+    "🏠 Test Home | Saved · 100 Test St · 0.99 mi",
+    "★ Test Spot | Saved · 100 Test St · 0.24 mi"
+   ]
+  ],
+  [
+   "V15e Fen: saved Fenway first",
+   true,
+   [
+    "★ Fenway Park | Saved · Fenway Park, 4 Jersey Street · 0.12 mi"
+   ]
+  ],
+  [
+   "V15e one tap on saved routes",
+   true,
+   ""
+  ],
+  [
+   "V15f one tap routes Home, no confirm",
+   true,
+   {
+    "dest": "Test Home",
+    "sheet": false,
+    "legDest": [
+     42.3499,
+     -71.0782
+    ],
+    "len": 1839
+   }
+  ],
+  [
+   "V15a style light (route+arrow kept)",
+   true,
+   {
+    "route": true,
+    "lanes": "none",
+    "arrow": 1
+   }
+  ],
+  [
+   "V15a light credit visible",
+   true,
+   "Routing BRouter · Search Photon | © OpenFreeMap © OpenMapTiles © OpenStreetMap contributors | OpenFreeMap © OpenMapTiles Data from OpenStreetMap"
+  ],
+  [
+   "V15a light credit not covered by panel",
+   true,
+   {
+    "attribBottom": 513,
+    "panelTop": 523,
+    "onTop": true
+   }
+  ],
+  [
+   "V15a style satellite (route+arrow kept)",
+   true,
+   {
+    "route": true,
+    "lanes": "none",
+    "arrow": 1
+   }
+  ],
+  [
+   "V15a satellite credit visible",
+   true,
+   "Routing BRouter · Search Photon | Esri, Maxar, Earthstar Geographics | Search/routing data © OpenStreetMap contributors"
+  ],
+  [
+   "V15a satellite credit not covered by panel",
+   true,
+   {
+    "attribBottom": 513,
+    "panelTop": 523,
+    "onTop": true
+   }
+  ],
+  [
+   "V15a style dark (route+arrow kept)",
+   true,
+   {
+    "route": true,
+    "lanes": "none",
+    "arrow": 1
+   }
+  ],
+  [
+   "V15a dark credit visible",
+   true,
+   "Routing BRouter · Search Photon | © OpenFreeMap © OpenMapTiles © OpenStreetMap contributors | OpenFreeMap © OpenMapTiles Data from OpenStreetMap"
+  ],
+  [
+   "V15a dark credit not covered by panel",
+   true,
+   {
+    "attribBottom": 513,
+    "panelTop": 523,
+    "onTop": true
+   }
+  ],
+  [
+   "V15a Lanes survive switch to satellite",
+   true,
+   {
+    "route": true,
+    "lanes": "visible",
+    "arrow": 1
+   }
+  ],
+  [
+   "V15a Lanes survive switch to dark",
+   true,
+   {
+    "route": true,
+    "lanes": "visible",
+    "arrow": 1
+   }
+  ],
+  [
+   "V15a Lanes off again",
+   true,
+   ""
+  ],
+  [
+   "V15b arrow S",
+   true,
+   {
+    "w": 44,
+    "fill": "#3d8bfd"
+   }
+  ],
+  [
+   "V15b arrow M",
+   true,
+   {
+    "w": 56,
+    "fill": "#22c55e"
+   }
+  ],
+  [
+   "V15b arrow L",
+   true,
+   {
+    "w": 76,
+    "fill": "#f97316"
+   }
+  ],
+  [
+   "V15b arrow XL",
+   true,
+   {
+    "w": 100,
+    "fill": "#ef4444"
+   }
+  ],
+  [
+   "V15c text normal",
+   true,
+   {
+    "cdist": 46,
+    "end": 60,
+    "card": "flex"
+   }
+  ],
+  [
+   "V15c text large",
+   true,
+   {
+    "cdist": 57.5,
+    "end": 75,
+    "card": "flex"
+   }
+  ],
+  [
+   "V15c text xl",
+   true,
+   {
+    "cdist": 69,
+    "end": 90,
+    "card": "flex"
+   }
+  ],
+  [
+   "V15d quiet profile ids minted",
+   true,
+   [
+    "custom_1793398553979",
+    "custom_1793398554995",
+    ""
+   ]
+  ],
+  [
+   "V15 settings + places restored after reload",
+   true,
+   [
+    {
+     "style": "light",
+     "arrowColor": "#ef4444",
+     "arrowSize": "XL",
+     "textScale": "large",
+     "pref": "quiet"
+    },
+    [
+     "Test Spot",
+     "Test Home",
+     "Fenway Park"
+    ]
+   ]
+  ],
+  [
+   "V15 arrow restored after reload",
+   true,
+   ""
+  ],
+  [
+   "V15 mode still Scooter after reload",
+   true,
+   ""
+  ],
+  [
+   "V15d route request uses quiet id",
+   true,
+   [
+    "custom_1793398553979"
+   ]
+  ],
+  [
+   "V15d quiet route ok",
+   true,
+   {
+    "len": 2145,
+    "router": "brouter.de"
+   }
+  ],
+  [
+   "0 console errors",
+   true,
+   []
+  ]
+ ],
+ "errors": [],
+ "warnings": [
+  "Image \"wood-pattern\" could not be loaded. Please make sure you have added the image with map.addImage() or a \"sprite\" property in your style. You can provide missing images by listening for the \"styleimagemissing\" map event.",
+  "Expected value to be of type number, but found null instead."
+ ],
+ "passed": 54,
+ "failed": []
+}
