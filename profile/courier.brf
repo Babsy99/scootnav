@@ -248,7 +248,7 @@ assign costfactor
   switch    highway=steps                             switch allow_steps 120 10000
   switch    route=ferry                               switch allow_ferries 5.67 10000
   switch    highway=bridleway                         10000
-  switch    highway=cycleway                          switch scooter 10000 1.1
+  switch    highway=cycleway                          switch scooter ( switch and oneway=yes not or foot=designated foot=yes 1.1 10000 ) 1.1
   switch    isresidentialorliving                     switch isunpaved 10 1.2
   switch    highway=service                           switch isunpaved 10 1.2
   switch or highway=track or highway=road or highway=path highway=footway

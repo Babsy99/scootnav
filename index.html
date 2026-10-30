@@ -72,7 +72,7 @@ button.sec{background:var(--panel);color:var(--text);border:1px solid var(--line
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script>
 const BR='https://brouter.de/brouter', NAMES='https://routing.openstreetmap.de/routed-bike/nearest/v1/driving/';
-const OFF_ROUTE_M=40, ADVANCE_M=18, AHEAD_M=15, PROFILE_VER='c3';
+const OFF_ROUTE_M=40, ADVANCE_M=18, AHEAD_M=15, PROFILE_VER='c4';
 const AREA=L.latLngBounds([42.29,-71.18],[42.41,-71.03]), HOME=L.latLngBounds([42.31,-71.13],[42.375,-71.07]);
 const qs=new URLSearchParams(location.search), SIM=qs.has('sim');
 const map=L.map('map',{zoomControl:false,maxBounds:AREA.pad(0.05),maxBoundsViscosity:0.8,minZoom:12}).fitBounds(HOME);
@@ -80,7 +80,7 @@ L.tileLayer('https://{s}.tile-cyclosm.openstreetmap.fr/cyclosm/{z}/{x}/{y}.png',
 const $=id=>document.getElementById(id);
 let me=null,meMarker=null,dest=null,destMarker=null,route=null,routeLine=null,steps=[],si=0,riding=false,offCount=0,rerouting=false,voiceOn=false,heading=null,simTimer=null,lastSpoken='';
 let mode=localStorage.getItem('sn_mode')||'scooter', leg=null;
-const NOTE={scooter:'Scooter mode: streets and bike lanes only. No paths, no sidewalks, no contraflow.',ebike:'E-bike mode: adds bike paths and signed contraflow lanes. No sidewalks.'};
+const NOTE={scooter:'Scooter mode: streets, bike lanes and street-side cycle tracks. No paths, no sidewalks, no contraflow.',ebike:'E-bike mode: adds bike paths and signed contraflow lanes. No sidewalks.'};
 function paintMode(){$('mode').textContent=mode==='scooter'?'Scooter':'E-bike';$('note').textContent='Draft v0.1 · '+NOTE[mode]}
 paintMode();
 // ---- profiles (keyless BRouter custom profiles, uploaded on load) ----
