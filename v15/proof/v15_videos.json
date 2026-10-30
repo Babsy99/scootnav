@@ -1,0 +1,38 @@
+{
+ "recenter": {
+  "mp4": "/workspace/scootnav-app/shots/v15/recenter.mp4",
+  "bytes": 997345,
+  "frames": 879,
+  "secs": 20.3,
+  "errors": [],
+  "info": {
+   "recenter_shown_after_pan": true,
+   "arrow_px_after_pan": [
+    -57,
+    114
+   ],
+   "arrow_px_after_recenter": [
+    195,
+    454
+   ],
+   "recenter_hidden_after_tap": true
+  }
+ },
+ "gmh": {
+  "mp4": "/workspace/scootnav-app/shots/v15/get-me-home.mp4",
+  "bytes": 159879,
+  "frames": 45,
+  "secs": 3.4,
+  "errors": [],
+  "info": {
+   "gmh_before": {
+    "unset": false,
+    "text": "🏠 Get Me Home"
+   },
+   "route_ms": 12,
+   "dest": "Test Home",
+   "len": 1948,
+   "confirmOpen": false
+  }
+ }
+}
