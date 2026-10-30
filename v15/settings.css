@@ -1,0 +1,54 @@
+/* ScootNav V15 settings + text scale. Load AFTER index.html's own <style>. */
+:root{--sn-ts:1}
+/* V15c: one variable scales the turn card, all control text and button heights */
+button{font-size:calc(18px*var(--sn-ts));min-height:calc(60px*var(--sn-ts))}
+#card{padding:calc(14px*var(--sn-ts)) 16px}
+#card svg{width:calc(84px*var(--sn-ts));height:calc(84px*var(--sn-ts))}
+#cdist{font-size:calc(46px*var(--sn-ts))}
+#cstreet{font-size:calc(24px*var(--sn-ts));overflow-wrap:anywhere}
+#card>div{min-width:0}
+#cthen{font-size:calc(16px*var(--sn-ts))}
+#stats{font-size:calc(17px*var(--sn-ts))}
+#hint{font-size:calc(15px*var(--sn-ts))}
+#sugg div{font-size:calc(18px*var(--sn-ts));padding:calc(14px*var(--sn-ts)) 16px}
+#sugg div small{font-size:calc(14px*var(--sn-ts))}
+#search input{font-size:calc(19px*var(--sn-ts));height:calc(60px*var(--sn-ts))}
+#recenter{width:calc(76px*var(--sn-ts));height:calc(76px*var(--sn-ts));border-radius:50%;font-size:calc(15px*var(--sn-ts));bottom:calc(270px*var(--sn-ts))}
+.legend{font-size:calc(12px*var(--sn-ts))}
+.sheet .big{font-size:calc(40px*var(--sn-ts));min-height:calc(84px*var(--sn-ts))}
+/* V15f + settings entry: always-visible row in the bottom controls */
+#snrow{display:flex;gap:8px;margin-bottom:8px}
+#snrow #gmh{flex:2;font-size:calc(21px*var(--sn-ts));min-height:calc(68px*var(--sn-ts));font-weight:900}
+#snrow #gmh.unset{background:#1f2937;border-color:#22c55e;color:#22c55e}
+#snrow #snset{flex:1;min-height:calc(68px*var(--sn-ts))}
+/* full-screen settings sheet and place editor */
+#snsheet,#snedit{display:none;position:fixed;inset:0;z-index:40;background:#0a0a0a;color:#fff;flex-direction:column;padding-top:env(safe-area-inset-top);padding-bottom:env(safe-area-inset-bottom)}
+#snedit{z-index:41}
+#snsheet.open,#snedit.open{display:flex}
+.sn-head{display:flex;align-items:center;gap:8px;padding:10px 12px;border-bottom:1px solid #222}
+.sn-title{flex:1;font-size:calc(26px*var(--sn-ts));font-weight:900}
+.sn-head button{min-width:110px}
+.sn-body{flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch;padding:4px 12px 24px}
+.sn-body h3{font-size:calc(15px*var(--sn-ts));text-transform:uppercase;letter-spacing:.06em;color:#9ca3af;margin:18px 2px 8px}
+.sn-seg{display:flex;gap:6px}
+.sn-seg button{flex:1;padding:0 4px;font-size:calc(16px*var(--sn-ts))}
+.sn-sw{display:flex;gap:8px;flex-wrap:wrap}
+.sn-sw button{width:calc(56px*var(--sn-ts));min-height:calc(56px*var(--sn-ts));height:calc(56px*var(--sn-ts));padding:0;border-radius:50%;border:3px solid #333}
+.sn-sw button.on{border:5px solid #fff;box-shadow:0 0 0 3px #22c55e}
+.sn-note{font-size:calc(14px*var(--sn-ts));color:#9ca3af;margin:8px 2px}
+.sn-note.ok{color:#22c55e;font-weight:700}
+.sn-place{display:flex;align-items:center;gap:6px;background:#111;border:2px solid #333;border-radius:16px;padding:8px;margin-bottom:8px}
+.sn-pl{flex:1;min-width:0}
+.sn-pl b{display:block;font-size:calc(18px*var(--sn-ts));white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sn-pl small{display:block;color:#9ca3af;font-size:calc(14px*var(--sn-ts));white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sn-place button{padding:0 10px;font-size:calc(15px*var(--sn-ts));min-height:calc(52px*var(--sn-ts))}
+.sn-place button.danger,.sn-place button[data-armed]{background:#ef4444;border-color:#ef4444;color:#fff}
+.sn-wide{width:100%;margin-top:8px}
+#snedit label{display:block;font-size:calc(15px*var(--sn-ts));color:#9ca3af;margin:14px 2px 0}
+#snedit input{display:block;width:100%;margin-top:6px;font-size:calc(19px*var(--sn-ts));height:calc(60px*var(--sn-ts));padding:0 14px;border-radius:16px;border:2px solid #333;background:#111;color:#fff}
+#snesugg div{padding:12px 14px;border:2px solid #333;border-top:none;background:#111;font-size:calc(17px*var(--sn-ts));font-weight:700}
+#snesugg div:first-child{border-top:2px solid #333;border-radius:16px 16px 0 0;margin-top:8px}
+#snesugg div:last-child{border-radius:0 0 16px 16px}
+#snesugg small{display:block;color:#9ca3af;font-weight:500;font-size:calc(13px*var(--sn-ts))}
+/* light basemap: keep the bottom panel readable */
+html[data-sn-style="light"] .maplibregl-ctrl-attrib{background:rgba(255,255,255,.7)}
