@@ -242,13 +242,15 @@ assign costfactor
   switch or highway=tertiary highway=tertiary_link    1.0
   switch    highway=unclassified                      switch isunpaved 10 1.1
   switch    or access=destination vehicle=destination  20
+  switch    and highway=service service=alley         10000   # V14: OSM has no private tag on Fenway 'Private Alley NNN' ways and BRouter can't read name=, so alleys are blocked in both modes; the drop-off snaps to the street side
+  switch    and highway=service or service=driveway service=parking_aisle  20
   switch    highway=busway                            switch or bicycle=yes bicycle=designated 1.3 10000
   switch    footway=sidewalk                          10000
   switch    highway=pedestrian                        switch scooter 10000 switch hascycleway 1.3 5
   switch    highway=steps                             switch allow_steps 120 10000
   switch    route=ferry                               switch allow_ferries 5.67 10000
   switch    highway=bridleway                         10000
-  switch    highway=cycleway                          switch scooter 10000 1.1
+  switch    highway=cycleway                          switch scooter ( switch and oneway=yes not or foot=designated foot=yes 1.1 10000 ) 1.1
   switch    isresidentialorliving                     switch isunpaved 10 1.2
   switch    highway=service                           switch isunpaved 10 1.2
   switch or highway=track or highway=road or highway=path highway=footway
