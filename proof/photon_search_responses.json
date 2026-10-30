@@ -1,0 +1,1724 @@
+{
+ "https://photon.komoot.io/api/?q=McD&lat=42.3489&lon=-71.0951&limit=15&location_bias_scale=0.9&bbox=-71.19,42.23,-70.99,42.4": {
+  "type": "FeatureCollection",
+  "features": [
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "W",
+     "osm_id": 180994902,
+     "osm_key": "place",
+     "osm_value": "square",
+     "type": "locality",
+     "name": "McDermott Court",
+     "district": "MIT",
+     "city": "Cambridge",
+     "county": "Middlesex",
+     "state": "Massachusetts",
+     "country": "United States",
+     "countrycode": "US",
+     "extent": [
+      -71.089864,
+      42.3608584,
+      -71.0886286,
+      42.3595825
+     ]
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -71.0893028,
+      42.3602221
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "W",
+     "osm_id": 8650135,
+     "osm_key": "highway",
+     "osm_value": "unclassified",
+     "type": "street",
+     "name": "McDonald Avenue",
+     "locality": "Barry's Corner",
+     "district": "Allston",
+     "city": "Boston",
+     "county": "Suffolk",
+     "state": "Massachusetts",
+     "country": "United States",
+     "postcode": "02134",
+     "countrycode": "US",
+     "extent": [
+      -71.1353552,
+      42.3641165,
+      -71.1334997,
+      42.3641152
+     ]
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -71.1344275,
+      42.3641159
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "W",
+     "osm_id": 8640435,
+     "osm_key": "highway",
+     "osm_value": "residential",
+     "type": "street",
+     "name": "McDonough Court",
+     "locality": "Readville",
+     "district": "Hyde Park",
+     "city": "Boston",
+     "county": "Suffolk",
+     "state": "Massachusetts",
+     "country": "United States",
+     "postcode": "02136",
+     "countrycode": "US",
+     "extent": [
+      -71.1351449,
+      42.2428568,
+      -71.1343364,
+      42.2425733
+     ]
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -71.1347411,
+      42.2427117
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "W",
+     "osm_id": 9505528,
+     "osm_key": "highway",
+     "osm_value": "residential",
+     "type": "street",
+     "name": "McDonald Street",
+     "district": "North Commons",
+     "city": "Quincy",
+     "county": "Norfolk",
+     "state": "Massachusetts",
+     "country": "United States",
+     "postcode": "02269",
+     "countrycode": "US",
+     "extent": [
+      -71.0215137,
+      42.2413223,
+      -71.0198052,
+      42.2403192
+     ]
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -71.0205389,
+      42.2405169
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "W",
+     "osm_id": 8995917,
+     "osm_key": "highway",
+     "osm_value": "residential",
+     "type": "street",
+     "name": "McDonald Street",
+     "district": "Readville Manor",
+     "city": "Dedham",
+     "county": "Norfolk",
+     "state": "Massachusetts",
+     "country": "United States",
+     "postcode": "02136",
+     "countrycode": "US",
+     "extent": [
+      -71.13969,
+      42.23327,
+      -71.1372376,
+      42.2313896
+     ]
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -71.1384619,
+      42.2323323
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "N",
+     "osm_id": 2367929358,
+     "osm_key": "amenity",
+     "osm_value": "fast_food",
+     "type": "house",
+     "housenumber": "540",
+     "name": "McDonald's",
+     "street": "Commonwealth Avenue",
+     "district": "Fenway-Kenmore",
+     "city": "Boston",
+     "county": "Suffolk",
+     "state": "Massachusetts",
+     "country": "United States",
+     "postcode": "02215",
+     "countrycode": "US"
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -71.0966956,
+      42.3485449
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "W",
+     "osm_id": 29805585,
+     "osm_key": "amenity",
+     "osm_value": "fast_food",
+     "type": "house",
+     "housenumber": "14",
+     "name": "McDonald's",
+     "street": "McGrath Highway",
+     "locality": "Inner Belt",
+     "city": "Somerville",
+     "county": "Middlesex",
+     "state": "Massachusetts",
+     "country": "United States",
+     "postcode": "02143",
+     "countrycode": "US",
+     "extent": [
+      -71.0830619,
+      42.3737986,
+      -71.0826768,
+      42.3736442
+     ]
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -71.0828688,
+      42.3736974
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "N",
+     "osm_id": 13298636516,
+     "osm_key": "amenity",
+     "osm_value": "fast_food",
+     "type": "house",
+     "name": "McDonald's",
+     "street": "Leverett Connector",
+     "district": "West End",
+     "city": "Boston",
+     "county": "Suffolk",
+     "state": "Massachusetts",
+     "country": "United States",
+     "postcode": "02222",
+     "countrycode": "US"
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -71.0627392,
+      42.3659893
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "W",
+     "osm_id": 345145209,
+     "osm_key": "amenity",
+     "osm_value": "fast_food",
+     "type": "house",
+     "housenumber": "360",
+     "name": "McDonald's",
+     "street": "Western Avenue",
+     "locality": "North Brighton",
+     "district": "Brighton",
+     "city": "Boston",
+     "county": "Suffolk",
+     "state": "Massachusetts",
+     "country": "United States",
+     "postcode": "02135",
+     "countrycode": "US",
+     "extent": [
+      -71.1371015,
+      42.3628739,
+      -71.1367246,
+      42.3626787
+     ]
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -71.1369119,
+      42.3627858
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "N",
+     "osm_id": 7613081519,
+     "osm_key": "amenity",
+     "osm_value": "fast_food",
+     "type": "house",
+     "housenumber": "329",
+     "name": "McDonald's",
+     "street": "Washington Street",
+     "locality": "Downtown Crossing",
+     "district": "Downtown",
+     "city": "Boston",
+     "county": "Suffolk",
+     "state": "Massachusetts",
+     "country": "United States",
+     "postcode": "02108",
+     "countrycode": "US"
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -71.0589526,
+      42.3569712
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "N",
+     "osm_id": 3997720740,
+     "osm_key": "amenity",
+     "osm_value": "fast_food",
+     "type": "house",
+     "housenumber": "146",
+     "name": "McDonald's",
+     "street": "Tremont Street",
+     "district": "Beacon Hill",
+     "city": "Boston",
+     "county": "Suffolk",
+     "state": "Massachusetts",
+     "country": "United States",
+     "postcode": "02111",
+     "countrycode": "US"
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -71.063037,
+      42.35524
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "N",
+     "osm_id": 9784123064,
+     "osm_key": "amenity",
+     "osm_value": "fast_food",
+     "type": "house",
+     "housenumber": "700",
+     "name": "McDonald's",
+     "street": "Atlantic Avenue",
+     "locality": "Church Green",
+     "district": "Downtown",
+     "city": "Boston",
+     "county": "Suffolk",
+     "state": "Massachusetts",
+     "country": "United States",
+     "postcode": "02111",
+     "countrycode": "US"
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -71.0558835,
+      42.3502679
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "W",
+     "osm_id": 29947823,
+     "osm_key": "amenity",
+     "osm_value": "fast_food",
+     "type": "house",
+     "housenumber": "870",
+     "name": "McDonald's",
+     "street": "Massachusetts Avenue",
+     "district": "Roxbury",
+     "city": "Boston",
+     "county": "Suffolk",
+     "state": "Massachusetts",
+     "country": "United States",
+     "postcode": "02118",
+     "countrycode": "US",
+     "extent": [
+      -71.0705173,
+      42.3316865,
+      -71.0702075,
+      42.3313857
+     ]
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -71.0703367,
+      42.3315091
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "N",
+     "osm_id": 4432010460,
+     "osm_key": "amenity",
+     "osm_value": "fast_food",
+     "type": "house",
+     "housenumber": "1223",
+     "name": "McDonald's",
+     "street": "Commonwealth Avenue",
+     "locality": "Packard's Corner",
+     "district": "Allston",
+     "city": "Boston",
+     "county": "Suffolk",
+     "state": "Massachusetts",
+     "country": "United States",
+     "postcode": "02134",
+     "countrycode": "US"
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -71.1309963,
+      42.3506919
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "N",
+     "osm_id": 9784653887,
+     "osm_key": "amenity",
+     "osm_value": "fast_food",
+     "type": "house",
+     "housenumber": "3064",
+     "name": "McDonald's",
+     "street": "Washington Street",
+     "district": "Roxbury",
+     "city": "Boston",
+     "county": "Suffolk",
+     "state": "Massachusetts",
+     "country": "United States",
+     "postcode": "02119",
+     "countrycode": "US"
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -71.0978968,
+      42.3155941
+     ]
+    }
+   }
+  ]
+ },
+ "https://photon.komoot.io/api/?q=McDonald%27s&lat=42.3489&lon=-71.0951&limit=15&location_bias_scale=0.9&bbox=-71.19,42.23,-70.99,42.4": {
+  "type": "FeatureCollection",
+  "features": [
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "N",
+     "osm_id": 2367929358,
+     "osm_key": "amenity",
+     "osm_value": "fast_food",
+     "type": "house",
+     "housenumber": "540",
+     "name": "McDonald's",
+     "street": "Commonwealth Avenue",
+     "district": "Fenway-Kenmore",
+     "city": "Boston",
+     "county": "Suffolk",
+     "state": "Massachusetts",
+     "country": "United States",
+     "postcode": "02215",
+     "countrycode": "US"
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -71.0966956,
+      42.3485449
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "W",
+     "osm_id": 29805585,
+     "osm_key": "amenity",
+     "osm_value": "fast_food",
+     "type": "house",
+     "housenumber": "14",
+     "name": "McDonald's",
+     "street": "McGrath Highway",
+     "locality": "Inner Belt",
+     "city": "Somerville",
+     "county": "Middlesex",
+     "state": "Massachusetts",
+     "country": "United States",
+     "postcode": "02143",
+     "countrycode": "US",
+     "extent": [
+      -71.0830619,
+      42.3737986,
+      -71.0826768,
+      42.3736442
+     ]
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -71.0828688,
+      42.3736974
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "N",
+     "osm_id": 3997720740,
+     "osm_key": "amenity",
+     "osm_value": "fast_food",
+     "type": "house",
+     "housenumber": "146",
+     "name": "McDonald's",
+     "street": "Tremont Street",
+     "district": "Beacon Hill",
+     "city": "Boston",
+     "county": "Suffolk",
+     "state": "Massachusetts",
+     "country": "United States",
+     "postcode": "02111",
+     "countrycode": "US"
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -71.063037,
+      42.35524
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "W",
+     "osm_id": 29947823,
+     "osm_key": "amenity",
+     "osm_value": "fast_food",
+     "type": "house",
+     "housenumber": "870",
+     "name": "McDonald's",
+     "street": "Massachusetts Avenue",
+     "district": "Roxbury",
+     "city": "Boston",
+     "county": "Suffolk",
+     "state": "Massachusetts",
+     "country": "United States",
+     "postcode": "02118",
+     "countrycode": "US",
+     "extent": [
+      -71.0705173,
+      42.3316865,
+      -71.0702075,
+      42.3313857
+     ]
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -71.0703367,
+      42.3315091
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "N",
+     "osm_id": 4432010460,
+     "osm_key": "amenity",
+     "osm_value": "fast_food",
+     "type": "house",
+     "housenumber": "1223",
+     "name": "McDonald's",
+     "street": "Commonwealth Avenue",
+     "locality": "Packard's Corner",
+     "district": "Allston",
+     "city": "Boston",
+     "county": "Suffolk",
+     "state": "Massachusetts",
+     "country": "United States",
+     "postcode": "02134",
+     "countrycode": "US"
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -71.1309963,
+      42.3506919
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "N",
+     "osm_id": 13298636516,
+     "osm_key": "amenity",
+     "osm_value": "fast_food",
+     "type": "house",
+     "name": "McDonald's",
+     "street": "Leverett Connector",
+     "district": "West End",
+     "city": "Boston",
+     "county": "Suffolk",
+     "state": "Massachusetts",
+     "country": "United States",
+     "postcode": "02222",
+     "countrycode": "US"
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -71.0627392,
+      42.3659893
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "N",
+     "osm_id": 7613081519,
+     "osm_key": "amenity",
+     "osm_value": "fast_food",
+     "type": "house",
+     "housenumber": "329",
+     "name": "McDonald's",
+     "street": "Washington Street",
+     "locality": "Downtown Crossing",
+     "district": "Downtown",
+     "city": "Boston",
+     "county": "Suffolk",
+     "state": "Massachusetts",
+     "country": "United States",
+     "postcode": "02108",
+     "countrycode": "US"
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -71.0589526,
+      42.3569712
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "N",
+     "osm_id": 9784123064,
+     "osm_key": "amenity",
+     "osm_value": "fast_food",
+     "type": "house",
+     "housenumber": "700",
+     "name": "McDonald's",
+     "street": "Atlantic Avenue",
+     "locality": "Church Green",
+     "district": "Downtown",
+     "city": "Boston",
+     "county": "Suffolk",
+     "state": "Massachusetts",
+     "country": "United States",
+     "postcode": "02111",
+     "countrycode": "US"
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -71.0558835,
+      42.3502679
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "W",
+     "osm_id": 345145209,
+     "osm_key": "amenity",
+     "osm_value": "fast_food",
+     "type": "house",
+     "housenumber": "360",
+     "name": "McDonald's",
+     "street": "Western Avenue",
+     "locality": "North Brighton",
+     "district": "Brighton",
+     "city": "Boston",
+     "county": "Suffolk",
+     "state": "Massachusetts",
+     "country": "United States",
+     "postcode": "02135",
+     "countrycode": "US",
+     "extent": [
+      -71.1371015,
+      42.3628739,
+      -71.1367246,
+      42.3626787
+     ]
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -71.1369119,
+      42.3627858
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "N",
+     "osm_id": 9784653887,
+     "osm_key": "amenity",
+     "osm_value": "fast_food",
+     "type": "house",
+     "housenumber": "3064",
+     "name": "McDonald's",
+     "street": "Washington Street",
+     "district": "Roxbury",
+     "city": "Boston",
+     "county": "Suffolk",
+     "state": "Massachusetts",
+     "country": "United States",
+     "postcode": "02119",
+     "countrycode": "US"
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -71.0978968,
+      42.3155941
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "W",
+     "osm_id": 29805202,
+     "osm_key": "amenity",
+     "osm_value": "fast_food",
+     "type": "house",
+     "housenumber": "301",
+     "name": "McDonald's",
+     "street": "Warren Street",
+     "district": "Roxbury",
+     "city": "Boston",
+     "county": "Suffolk",
+     "state": "Massachusetts",
+     "country": "United States",
+     "postcode": "02119",
+     "countrycode": "US",
+     "extent": [
+      -71.0825121,
+      42.3204379,
+      -71.0820283,
+      42.3202694
+     ]
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -71.0822694,
+      42.3203413
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "W",
+     "osm_id": 762364045,
+     "osm_key": "amenity",
+     "osm_value": "fast_food",
+     "type": "house",
+     "housenumber": "1750",
+     "name": "McDonald's",
+     "street": "Soldiers Field Road",
+     "locality": "Derek's Corner",
+     "district": "Brighton",
+     "city": "Boston",
+     "county": "Suffolk",
+     "state": "Massachusetts",
+     "country": "United States",
+     "postcode": "02135",
+     "countrycode": "US",
+     "extent": [
+      -71.1549028,
+      42.3588395,
+      -71.1547187,
+      42.358556
+     ]
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -71.1548107,
+      42.3586977
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "N",
+     "osm_id": 942207723,
+     "osm_key": "amenity",
+     "osm_value": "fast_food",
+     "type": "house",
+     "housenumber": "128",
+     "name": "McDonald's",
+     "street": "Broadway",
+     "district": "Hendersonville",
+     "city": "Everett",
+     "county": "Middlesex",
+     "state": "Massachusetts",
+     "country": "United States",
+     "postcode": "02149",
+     "countrycode": "US"
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -71.0641082,
+      42.3985362
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "N",
+     "osm_id": 9784653890,
+     "osm_key": "amenity",
+     "osm_value": "fast_food",
+     "type": "house",
+     "housenumber": "1518",
+     "name": "McDonald's",
+     "street": "Dorchester Avenue",
+     "locality": "Fields Corner",
+     "district": "Dorchester",
+     "city": "Boston",
+     "county": "Suffolk",
+     "state": "Massachusetts",
+     "country": "United States",
+     "postcode": "02122",
+     "countrycode": "US"
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -71.0608784,
+      42.2991882
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "N",
+     "osm_id": 9784653889,
+     "osm_key": "amenity",
+     "osm_value": "fast_food",
+     "type": "house",
+     "housenumber": "605",
+     "name": "McDonald's",
+     "street": "Washington Street",
+     "locality": "Dorchester Center",
+     "district": "Dorchester",
+     "city": "Boston",
+     "county": "Suffolk",
+     "state": "Massachusetts",
+     "country": "United States",
+     "postcode": "02124",
+     "countrycode": "US"
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -71.07177,
+      42.2904546
+     ]
+    }
+   }
+  ]
+ },
+ "https://photon.komoot.io/api/?q=El%20Jefe&lat=42.3489&lon=-71.0951&limit=15&location_bias_scale=0.9&bbox=-71.19,42.23,-70.99,42.4": {
+  "type": "FeatureCollection",
+  "features": [
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "N",
+     "osm_id": 6124473594,
+     "osm_key": "amenity",
+     "osm_value": "restaurant",
+     "type": "house",
+     "housenumber": "14",
+     "name": "El Jefe's Taqueria",
+     "street": "Brattle Street",
+     "district": "West Cambridge",
+     "city": "Cambridge",
+     "county": "Middlesex",
+     "state": "Massachusetts",
+     "country": "United States",
+     "postcode": "02138",
+     "countrycode": "US"
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -71.1199556,
+      42.3732683
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "N",
+     "osm_id": 11165170305,
+     "osm_key": "amenity",
+     "osm_value": "fast_food",
+     "type": "house",
+     "housenumber": "957",
+     "name": "El Jefe's Taqueria",
+     "street": "Commonwealth Avenue",
+     "locality": "Packard's Corner",
+     "district": "Allston",
+     "city": "Boston",
+     "county": "Suffolk",
+     "state": "Massachusetts",
+     "country": "United States",
+     "postcode": "02215",
+     "countrycode": "US"
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -71.1189076,
+      42.3517484
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "N",
+     "osm_id": 7753597860,
+     "osm_key": "amenity",
+     "osm_value": "restaurant",
+     "type": "house",
+     "housenumber": "80",
+     "name": "El Jefe's Taqueria",
+     "street": "Boylston Street",
+     "district": "Beacon Hill",
+     "city": "Boston",
+     "county": "Suffolk",
+     "state": "Massachusetts",
+     "country": "United States",
+     "postcode": "02116",
+     "countrycode": "US"
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -71.0649587,
+      42.3522857
+     ]
+    }
+   }
+  ]
+ },
+ "https://photon.komoot.io/api/?q=Prudential&lat=42.3489&lon=-71.0951&limit=15&location_bias_scale=0.9&bbox=-71.19,42.23,-70.99,42.4": {
+  "type": "FeatureCollection",
+  "features": [
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "N",
+     "osm_id": 13906039247,
+     "osm_key": "railway",
+     "osm_value": "station",
+     "type": "house",
+     "name": "Prudential",
+     "street": "Huntington Avenue",
+     "district": "Back Bay",
+     "city": "Boston",
+     "county": "Suffolk",
+     "state": "Massachusetts",
+     "country": "United States",
+     "postcode": "02199",
+     "countrycode": "US"
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -71.0813629,
+      42.3456911
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "N",
+     "osm_id": 6046990617,
+     "osm_key": "railway",
+     "osm_value": "stop",
+     "type": "house",
+     "name": "Prudential",
+     "street": "Huntington Avenue",
+     "district": "Back Bay",
+     "city": "Boston",
+     "county": "Suffolk",
+     "state": "Massachusetts",
+     "country": "United States",
+     "postcode": "02199",
+     "countrycode": "US"
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -71.0812649,
+      42.3457521
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "N",
+     "osm_id": 6046991229,
+     "osm_key": "railway",
+     "osm_value": "stop",
+     "type": "house",
+     "name": "Prudential",
+     "street": "Huntington Avenue",
+     "district": "Back Bay",
+     "city": "Boston",
+     "county": "Suffolk",
+     "state": "Massachusetts",
+     "country": "United States",
+     "postcode": "02199",
+     "countrycode": "US"
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -71.0814748,
+      42.3456212
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "W",
+     "osm_id": 29869880,
+     "osm_key": "building",
+     "osm_value": "office",
+     "type": "house",
+     "housenumber": "800",
+     "name": "Prudential Tower",
+     "street": "Boylston Street",
+     "locality": "Block G",
+     "district": "Back Bay",
+     "city": "Boston",
+     "county": "Suffolk",
+     "state": "Massachusetts",
+     "country": "United States",
+     "postcode": "02199",
+     "countrycode": "US",
+     "extent": [
+      -71.0829178,
+      42.3474835,
+      -71.0820986,
+      42.34686
+     ]
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -71.0825069,
+      42.3471718
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "R",
+     "osm_id": 1626846,
+     "osm_key": "shop",
+     "osm_value": "mall",
+     "type": "house",
+     "housenumber": "800",
+     "name": "Prudential Center",
+     "street": "Boylston Street",
+     "locality": "Block G",
+     "district": "Back Bay",
+     "city": "Boston",
+     "county": "Suffolk",
+     "state": "Massachusetts",
+     "country": "United States",
+     "postcode": "02199",
+     "countrycode": "US",
+     "extent": [
+      -71.0832447,
+      42.3485217,
+      -71.0800517,
+      42.3456794
+     ]
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -71.081655,
+      42.3470908
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "R",
+     "osm_id": 20268175,
+     "osm_key": "man_made",
+     "osm_value": "tunnel",
+     "type": "house",
+     "name": "Prudential Tunnel",
+     "street": "Huntington Avenue",
+     "district": "Back Bay",
+     "city": "Boston",
+     "county": "Suffolk",
+     "state": "Massachusetts",
+     "country": "United States",
+     "postcode": "02117",
+     "countrycode": "US",
+     "extent": [
+      -71.0869412,
+      42.3480841,
+      -71.0736625,
+      42.3475167
+     ]
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -71.0800091,
+      42.3477862
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "R",
+     "osm_id": 3244667,
+     "osm_key": "leisure",
+     "osm_value": "common",
+     "type": "other",
+     "name": "Prudential Center Plaza I",
+     "district": "Back Bay",
+     "city": "Boston",
+     "county": "Suffolk",
+     "state": "Massachusetts",
+     "country": "United States",
+     "countrycode": "US",
+     "extent": [
+      -71.0821297,
+      42.3487878,
+      -71.0805451,
+      42.3476988
+     ]
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -71.0812099,
+      42.3482417
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "R",
+     "osm_id": 11207405,
+     "osm_key": "leisure",
+     "osm_value": "common",
+     "type": "other",
+     "name": "Prudential Center Plaza",
+     "district": "Back Bay",
+     "city": "Boston",
+     "county": "Suffolk",
+     "state": "Massachusetts",
+     "country": "United States",
+     "countrycode": "US",
+     "extent": [
+      -71.0804923,
+      42.3487965,
+      -71.0790619,
+      42.3479074
+     ]
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -71.0796923,
+      42.3483506
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "W",
+     "osm_id": 813327154,
+     "osm_key": "leisure",
+     "osm_value": "common",
+     "type": "other",
+     "name": "Prudential Center Plaza II",
+     "district": "Back Bay",
+     "city": "Boston",
+     "county": "Suffolk",
+     "state": "Massachusetts",
+     "country": "United States",
+     "countrycode": "US",
+     "extent": [
+      -71.0834209,
+      42.3485827,
+      -71.0825252,
+      42.3480232
+     ]
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -71.0831401,
+      42.348293
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "W",
+     "osm_id": 838846722,
+     "osm_key": "railway",
+     "osm_value": "platform",
+     "type": "house",
+     "name": "Prudential - Green Line (E) - Park Street & North",
+     "street": "Huntington Avenue",
+     "district": "Back Bay",
+     "city": "Boston",
+     "county": "Suffolk",
+     "state": "Massachusetts",
+     "country": "United States",
+     "postcode": "02199",
+     "countrycode": "US",
+     "extent": [
+      -71.0814644,
+      42.345764,
+      -71.0812362,
+      42.3455791
+     ]
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -71.0813176,
+      42.3456983
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "W",
+     "osm_id": 838846721,
+     "osm_key": "railway",
+     "osm_value": "platform",
+     "type": "house",
+     "name": "Prudential - Green Line (E) - Heath Street",
+     "street": "Huntington Avenue",
+     "district": "Back Bay",
+     "city": "Boston",
+     "county": "Suffolk",
+     "state": "Massachusetts",
+     "country": "United States",
+     "postcode": "02199",
+     "countrycode": "US",
+     "extent": [
+      -71.0815073,
+      42.3457906,
+      -71.0812763,
+      42.3456066
+     ]
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -71.0813532,
+      42.3457299
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "N",
+     "osm_id": 7657638642,
+     "osm_key": "amenity",
+     "osm_value": "parking",
+     "type": "house",
+     "name": "Prudential Center Garage (P4, P5)",
+     "street": "Exeter Street",
+     "district": "Back Bay",
+     "city": "Boston",
+     "county": "Suffolk",
+     "state": "Massachusetts",
+     "country": "United States",
+     "postcode": "02199",
+     "countrycode": "US"
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -71.0793427,
+      42.3483675
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "W",
+     "osm_id": 825055343,
+     "osm_key": "amenity",
+     "osm_value": "parking",
+     "type": "house",
+     "name": "Prudential Center Parking Garage",
+     "street": "Huntington Avenue",
+     "district": "Back Bay",
+     "city": "Boston",
+     "county": "Suffolk",
+     "state": "Massachusetts",
+     "country": "United States",
+     "postcode": "02199",
+     "countrycode": "US",
+     "extent": [
+      -71.0827182,
+      42.3468798,
+      -71.0808435,
+      42.3458445
+     ]
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -71.081758,
+      42.3463951
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "W",
+     "osm_id": 1452685571,
+     "osm_key": "railway",
+     "osm_value": "light_rail",
+     "type": "house",
+     "name": "Prudential Crossover",
+     "street": "Belvidere Street",
+     "district": "Back Bay",
+     "city": "Boston",
+     "county": "Suffolk",
+     "state": "Massachusetts",
+     "country": "United States",
+     "postcode": "02199",
+     "countrycode": "US",
+     "extent": [
+      -71.0817842,
+      42.345439,
+      -71.0816486,
+      42.3453691
+     ]
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -71.0817164,
+      42.3454041
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "N",
+     "osm_id": 3179914766,
+     "osm_key": "tourism",
+     "osm_value": "viewpoint",
+     "type": "house",
+     "housenumber": "800",
+     "name": "Skywalk Observatory",
+     "street": "Boylston Street",
+     "locality": "Block G",
+     "district": "Back Bay",
+     "city": "Boston",
+     "county": "Suffolk",
+     "state": "Massachusetts",
+     "country": "United States",
+     "postcode": "02199",
+     "countrycode": "US"
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -71.0826325,
+      42.3473488
+     ]
+    }
+   }
+  ]
+ },
+ "https://photon.komoot.io/api/?q=Hemen&lat=42.3489&lon=-71.0951&limit=15&location_bias_scale=0.9&bbox=-71.19,42.23,-70.99,42.4": {
+  "type": "FeatureCollection",
+  "features": [
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "W",
+     "osm_id": 29830210,
+     "osm_key": "leisure",
+     "osm_value": "park",
+     "type": "other",
+     "name": "Hemenway Playground",
+     "district": "Dorchester",
+     "city": "Boston",
+     "county": "Suffolk",
+     "state": "Massachusetts",
+     "country": "United States",
+     "countrycode": "US",
+     "extent": [
+      -71.0572396,
+      42.2921391,
+      -71.0550995,
+      42.2906808
+     ]
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -71.0562013,
+      42.2914641
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "W",
+     "osm_id": 42825653,
+     "osm_key": "highway",
+     "osm_value": "secondary",
+     "type": "street",
+     "name": "Hemenway Street",
+     "district": "Fenway-Kenmore",
+     "city": "Boston",
+     "county": "Suffolk",
+     "state": "Massachusetts",
+     "country": "United States",
+     "postcode": "02115",
+     "countrycode": "US",
+     "extent": [
+      -71.0925673,
+      42.3439575,
+      -71.0899095,
+      42.339528
+     ]
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -71.0908263,
+      42.3414579
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "W",
+     "osm_id": 8642460,
+     "osm_key": "highway",
+     "osm_value": "service",
+     "type": "street",
+     "name": "Hemenway Terrace",
+     "district": "Fenway-Kenmore",
+     "city": "Boston",
+     "county": "Suffolk",
+     "state": "Massachusetts",
+     "country": "United States",
+     "postcode": "02115",
+     "countrycode": "US",
+     "extent": [
+      -71.0913704,
+      42.3423857,
+      -71.0903988,
+      42.3421347
+     ]
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -71.0909129,
+      42.3422234
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "W",
+     "osm_id": 29631713,
+     "osm_key": "leisure",
+     "osm_value": "sports_centre",
+     "type": "house",
+     "housenumber": "1515",
+     "name": "Hemenway Gym",
+     "street": "Massachusetts Avenue",
+     "district": "Neighborhood Nine",
+     "city": "Cambridge",
+     "county": "Middlesex",
+     "state": "Massachusetts",
+     "country": "United States",
+     "postcode": "02138",
+     "countrycode": "US",
+     "extent": [
+      -71.1197406,
+      42.3771756,
+      -71.1193742,
+      42.3768169
+     ]
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -71.1195574,
+      42.377004
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "W",
+     "osm_id": 29543384,
+     "osm_key": "building",
+     "osm_value": "yes",
+     "type": "house",
+     "housenumber": "35",
+     "name": "Hemenway CM",
+     "street": "Batchelder Street",
+     "district": "Roxbury",
+     "city": "Boston",
+     "county": "Suffolk",
+     "state": "Massachusetts",
+     "country": "United States",
+     "postcode": "02119",
+     "countrycode": "US",
+     "extent": [
+      -71.069116,
+      42.3219683,
+      -71.0688668,
+      42.3217442
+     ]
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -71.0689897,
+      42.3218491
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "W",
+     "osm_id": 29867464,
+     "osm_key": "building",
+     "osm_value": "dormitory",
+     "type": "house",
+     "housenumber": "132",
+     "name": "142-148 Hemenway",
+     "street": "Hemenway Street",
+     "district": "Fenway-Kenmore",
+     "city": "Boston",
+     "county": "Suffolk",
+     "state": "Massachusetts",
+     "country": "United States",
+     "postcode": "02115",
+     "countrycode": "US",
+     "extent": [
+      -71.0904843,
+      42.3424064,
+      -71.0899759,
+      42.3417593
+     ]
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -71.0902441,
+      42.3420447
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "W",
+     "osm_id": 469245177,
+     "osm_key": "leisure",
+     "osm_value": "park",
+     "type": "other",
+     "name": "Huntington-Hemenway Mall",
+     "district": "Fenway-Kenmore",
+     "city": "Boston",
+     "county": "Suffolk",
+     "state": "Massachusetts",
+     "country": "United States",
+     "countrycode": "US",
+     "extent": [
+      -71.0923957,
+      42.3397895,
+      -71.0917436,
+      42.3392403
+     ]
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -71.0920544,
+      42.3395811
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "osm_type": "W",
+     "osm_id": 29581429,
+     "osm_key": "building",
+     "osm_value": "school",
+     "type": "house",
+     "housenumber": "30",
+     "name": "Augustus Hemenway School",
+     "street": "Millstone Road",
+     "district": "Hyde Park",
+     "city": "Boston",
+     "county": "Suffolk",
+     "state": "Massachusetts",
+     "country": "United States",
+     "postcode": "02136",
+     "countrycode": "US",
+     "extent": [
+      -71.1332749,
+      42.2341234,
+      -71.1324985,
+      42.2336728
+     ]
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      -71.1327641,
+      42.2338955
+     ]
+    }
+   }
+  ]
+ },
+ "https://nominatim.openstreetmap.org/search?format=jsonv2&limit=1&bounded=1&viewbox=-71.19,42.23,-70.99,42.4&q=40%20Hemenway%20Street%2C%20Boston": [
+  {
+   "place_id": 412774303,
+   "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 246500791,
+   "lat": "42.3452720",
+   "lon": "-71.0894740",
+   "category": "place",
+   "type": "house",
+   "place_rank": 30,
+   "importance": 0.00000999999999995449,
+   "addresstype": "place",
+   "name": "",
+   "display_name": "40, Hemenway Street, Fenway-Kenmore, Boston, Suffolk County, Massachusetts, 02115, United States",
+   "boundingbox": [
+    "42.3452220",
+    "42.3453220",
+    "-71.0895240",
+    "-71.0894240"
+   ]
+  }
+ ]
+}
