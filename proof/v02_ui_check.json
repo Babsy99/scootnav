@@ -1,0 +1,116 @@
+{
+ "100": {
+  "rows": [
+   "Test Spot | ★ Saved · 100 Test St · 0.32 mi"
+  ],
+  "requests": []
+ },
+ "cold_mode": "Scooter",
+ "Mc": {
+  "rows": [
+   "Test Spot | ★ Saved · 100 Test St · 0.32 mi"
+  ],
+  "requests": []
+ },
+ "McD": {
+  "rows": [
+   "McDonald's | 540 Commonwealth Avenue · 135 m",
+   "McDonald's | 146 Tremont Street · 1.7 mi",
+   "McDonald's | 870 Massachusetts Avenue · 1.7 mi",
+   "McDonald's | 14 McGrath Highway · 1.8 mi",
+   "McDonald's | 1223 Commonwealth Avenue · 1.8 mi",
+   "McDonald's | 329 Washington Street · 1.9 mi"
+  ],
+  "requests": [
+   "https://photon.komoot.io/api/?q=McD&lat=42.3489&lon=-71.0951&limit=15&location_bias_scale=0.9&bbox=-71.19,42.23,-70.99,42.4",
+   "https://photon.komoot.io/api/?q=McD&lat=42.3489&lon=-71.0951&limit=15&location_bias_scale=0.9&bbox=-71.19,42.23,-70.99,42.4"
+  ]
+ },
+ "McDonald's": {
+  "rows": [
+   "McDonald's | 540 Commonwealth Avenue · 135 m",
+   "McDonald's | 146 Tremont Street · 1.7 mi",
+   "McDonald's | 870 Massachusetts Avenue · 1.7 mi",
+   "McDonald's | 14 McGrath Highway · 1.8 mi",
+   "McDonald's | 1223 Commonwealth Avenue · 1.8 mi",
+   "McDonald's | 329 Washington Street · 1.9 mi"
+  ],
+  "requests": [
+   "https://photon.komoot.io/api/?q=McDonald%27s&lat=42.3489&lon=-71.0951&limit=15&location_bias_scale=0.9&bbox=-71.19,42.23,-70.99,42.4"
+  ]
+ },
+ "El Jefe": {
+  "rows": [
+   "El Jefe's Taqueria | 957 Commonwealth Avenue · 1.2 mi",
+   "El Jefe's Taqueria | 80 Boylston Street · 1.6 mi",
+   "El Jefe's Taqueria | 14 Brattle Street · 2.1 mi"
+  ],
+  "requests": [
+   "https://photon.komoot.io/api/?q=El%20Jefe&lat=42.3489&lon=-71.0951&limit=15&location_bias_scale=0.9&bbox=-71.19,42.23,-70.99,42.4"
+  ]
+ },
+ "Prudential": {
+  "rows": [
+   "Prudential Center Plaza II | Boston · 0.61 mi",
+   "Skywalk Observatory | 800 Boylston Street · 0.65 mi",
+   "Prudential Tower | 800 Boylston Street · 0.65 mi",
+   "Prudential Center | 800 Boylston Street · 0.70 mi",
+   "Prudential Center Parking Garage | Huntington Avenue · 0.70 mi",
+   "Prudential Center Plaza I | Boston · 0.71 mi"
+  ],
+  "requests": [
+   "https://photon.komoot.io/api/?q=Prudential&lat=42.3489&lon=-71.0951&limit=15&location_bias_scale=0.9&bbox=-71.19,42.23,-70.99,42.4"
+  ]
+ },
+ "40 Hemen": {
+  "rows": [
+   "40 Hemenway Street | Boston · pin on street · 0.56 mi"
+  ],
+  "requests": [
+   "https://photon.komoot.io/api/?q=Hemen&lat=42.3489&lon=-71.0951&limit=15&location_bias_scale=0.9&bbox=-71.19,42.23,-70.99,42.4"
+  ]
+ },
+ "route": {
+  "len": 2085,
+  "dest": [
+   42.34527,
+   -71.08947
+  ],
+  "router": "bikerouter.de",
+  "steps": 10
+ },
+ "card": {
+  "bg": "rgb(255, 255, 255)",
+  "fg": "rgb(0, 0, 0)",
+  "display": "flex",
+  "text": "105 m | Turn left onto Commonwealth Avenue | Then keep right onto Commonwealth Avenue"
+ },
+ "recenter": "block",
+ "leg": {
+  "id": "mvvi4zuk",
+  "app": "scootnav v0.2",
+  "mode": "scooter",
+  "t_input": "2026-10-30T21:46:20.157Z",
+  "dest_query": "40 Hemenway Street",
+  "dest": [
+   42.34527,
+   -71.08947
+  ],
+  "t_route_ready": "2026-10-30T21:47:01.055Z",
+  "t_start": "2026-10-30T21:47:09.752Z",
+  "handoff_s": 49.6,
+  "route_m": 2085,
+  "reroutes": [],
+  "t_end": null,
+  "arrived": null,
+  "rating": null,
+  "router": "bikerouter.de",
+  "route_ms": 3394
+ },
+ "errs": [
+  "Access to fetch at 'https://brouter.de/brouter/profile' from origin 'http://localhost:8765' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
+  "Failed to load resource: net::ERR_FAILED",
+  "Access to fetch at 'https://brouter.de/brouter/profile' from origin 'http://localhost:8765' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
+  "Failed to load resource: net::ERR_FAILED"
+ ]
+}
